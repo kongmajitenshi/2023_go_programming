@@ -31,7 +31,10 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		if inputNumber < answer {
+		if inputNumber == answer {
+			fmt.Println("Graet! You got number. Congratulations~")
+			break
+		} else if inputNumber < answer {
 			fmt.Println("up") // Answer is higher
 		} else if inputNumber > answer {
 			fmt.Println("down") // Answer is lower
