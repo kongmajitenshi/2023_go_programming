@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func processScore(kor int, eng int, math int) (int, int) {
+func processScore(kor int, eng int, math int) (int, int) { // return a, b 의 자료형이 각각 int, int
 	totalScore := kor + eng + math
 	average := totalScore / 3
 
@@ -15,7 +15,7 @@ func processScore(kor int, eng int, math int) (int, int) {
 	// fmt.Printf("%s의 총점은 %d점 입니다. 평균은 %d점 입니다. \n", name, totalScore, average)
 }
 
-func isPrime(n int) (bool, error) {
+func isPrime(n int) (bool, error) { // return a, b 의 자료형이 bool, error
 	prime := true
 
 	if n < 2 {

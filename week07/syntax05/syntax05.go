@@ -21,7 +21,7 @@ func main() {
 	/*----------------------------------------------------*/
 	// 자료타입을 변수명으로 사용함 > shadowing 발생
 	// var float64 float64 = 9.1
-	// var test float64 = 6.9
+	// var test float64 = 6.9 // 변수 float64로 인해 자료형 float64를 사용할 수 없게 됨.
 	// fmt.Println(test)
 
 	// var fmt string = "inha"
