@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 )
-func swap(n1 int, n2 int) {
-	temp := n1
-	n1 := n2
-	n2 := temp
+func swap(n1 *int, n2 *int) {
+	temp := *n1
+	*n1 = *n2
+	*n2 = temp
 }
 
 func main() {
@@ -17,7 +17,7 @@ func main() {
 	fmt.Printf("%T\n", c)
 
 	fmt.Println(a, b)
-	swap(a,b)
+	swap(&a,&b) // pass by pionter
 	fmt.Println(a,b)
 }
 
