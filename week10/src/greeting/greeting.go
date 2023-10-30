@@ -3,9 +3,9 @@ package greeting
 import "fmt"
 
 func Hello() {
-	fmt.Println("HELLO!")
+	fmt.Println("안녕하세요!")
 }
 
 func Hi() {
-	fmt.Println("HI!")
+	fmt.Println("안녕!")
 }
