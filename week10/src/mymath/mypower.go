@@ -1,0 +1,9 @@
+package mymath
+
+func MyPower(num1 int, num2 int) int {
+	result := 1
+	for i := 1; i <= num2; i++ {
+		result = result * num1
+	}
+	return result
+}
