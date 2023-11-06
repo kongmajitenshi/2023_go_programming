@@ -34,4 +34,9 @@ func main() {
 	for _, prime := range primes { // _(언더바)를 사용하면 괜찮음.
 		fmt.Println(prime)
 	}
+
+	fmt.Printf("%#v\n", test)
+	fmt.Println(test)
+	fmt.Printf("%#v\n", primes)
+	fmt.Println(primes)
 }
