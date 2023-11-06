@@ -31,7 +31,7 @@ func main() {
 	// 	fmt.Println(primes[j])
 	// }
 
-	for idx, prime := range primes { // idx를 사용하지 않아서 에러가 생김.
+	for _, prime := range primes { // _(언더바)를 사용하면 괜찮음.
 		fmt.Println(prime)
 	}
 }
