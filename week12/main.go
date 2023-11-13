@@ -9,8 +9,8 @@ func main() {
 	a[3] = "d"
 	as := a[0:2]
 	as[1] = "z"
-	c := append(a, "y")
-	// c := append(a, "y", "x", "y", "x") // capacity가 5 -> 10 으로 변함 => 메모리 주소 새롭게 할당함
+	// c := append(a, "y")
+	c := append(a, "y", "x", "y", "x") // capacity가 5 -> 10 으로 변함 => 메모리 주소 새롭게 할당함
 
 	fmt.Println(a, len(a), cap(a))
 	fmt.Println(c, len(c), cap(c))
