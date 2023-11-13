@@ -3,13 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	a := []string{"a", "b", "c", "d"}
-	as := a[:2]
+	a := make([]string, 4, 5) // 원소는 4개, 실 크기는 5. (타입, 개수, 수용량) 형태임.
+	a[0] = "a"
+	a[2] = "c"
+	a[3] = "d"
+	as := a[0:2]
 	as[1] = "z"
-	fmt.Println(a)
-	fmt.Println(as)
+	c := append(a, "y")
+	// c := append(a, "y", "x", "y", "x") // capacity가 5 -> 10 으로 변함 => 메모리 주소 새롭게 할당함
 
-	b := [4]int{4, 3, 2, 1}
-	bs := b[1:3]
-	fmt.Println(bs)
+	fmt.Println(a, len(a), cap(a))
+	fmt.Println(c, len(c), cap(c))
+	fmt.Printf("%x %x %x \n", &a[0], &as[0], &c[0])
+	c[0] = "k"
+	fmt.Println(a, c)
 }
