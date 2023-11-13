@@ -16,4 +16,9 @@ func main() {
 	for _, value := range copyS {
 		fmt.Println(value)
 	}
+
+	test := [3]string{"inha", "go", "student"} // 배열 리터럴 이용해서 test배열 생성
+	// testS := test[0:4] // invalid argument: index 4 out of bounds [0:4]
+	testS := test[0:2]
+	fmt.Println(len(testS))
 }
